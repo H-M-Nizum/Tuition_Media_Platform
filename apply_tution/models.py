@@ -4,7 +4,7 @@ from tution.models import TutionModel
 # Create your models here.
 APPALY_STATUS = [
     ('Pending', 'Pending'),
-    ('Running', 'Running'),
+    ('Selected', 'Selected'),
     ('Completed', 'Completed'),
 ]
 class ApplicationModel(models.Model):
