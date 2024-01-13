@@ -5,6 +5,7 @@ from rest_framework import viewsets
 from . import models
 from . import serializers
 
+
 class ApplicationViewset(viewsets.ModelViewSet):
     queryset = models.ApplicationModel.objects.all()
     serializer_class = serializers.ApplicationSerializers
@@ -17,4 +18,3 @@ class ApplicationViewset(viewsets.ModelViewSet):
             queryset = queryset.filter(applicant_id=applicant_id) ## queryset ke overwrite korlam
         return queryset  # finally return queryset
 
-   
